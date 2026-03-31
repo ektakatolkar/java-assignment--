@@ -1,0 +1,17 @@
+class MusicPlayer extends Thread{
+    public void run(){
+        try{
+            System.out.println("Playing song...");
+            for(int i=1;i<=3;i++){
+                System.out.println("Progress "+i);
+                Thread.sleep(1000);
+            }
+        }catch(Exception e){}
+    }
+}
+public class Assignment36{
+    public static void main(String[] args){
+        MusicPlayer obj=new MusicPlayer();
+        obj.start();
+    }
+}
